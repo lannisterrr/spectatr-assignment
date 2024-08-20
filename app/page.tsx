@@ -45,7 +45,7 @@ export default function Home() {
   }, []);
   const handleSearch = debounce((term: string) => {
     setSearchTerm(term);
-  }, 500); //
+  }, 500); // debounce the search for 5 miliseconds
   const filteredUsers = users.filter((user) =>
     user.name.toLowerCase().includes(searchTerm.toLowerCase())
   );

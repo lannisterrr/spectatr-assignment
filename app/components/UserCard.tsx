@@ -6,13 +6,6 @@ interface UserCardProps {
 
 const UserCard: React.FC<UserCardProps> = ({ name, username, email }) => {
   return (
-    // <div className="p-4 border  flex  flex-col  items-center rounded-lg shadow-lg  transform transition-transform duration-300 ease-in-out hover:scale-105">
-    //   <img src="/user-user.webp" className="max-w-[200px]" />
-    //   <h2 className="text-xl font-semibold">{name}</h2>
-    //   <p>@{username}</p>
-    //   <p>{email}</p>
-    // </div>
-
     <div className="p-6 bg-white border border-gray-200 flex flex-col items-center rounded-lg shadow-lg transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
       <img src="/girl.jpeg" alt="User Avatar" className=" " />
       <h2 className="text-2xl font-bold text-indigo-600 mb-2">{name}</h2>
